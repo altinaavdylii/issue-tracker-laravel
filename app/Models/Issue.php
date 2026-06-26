@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Project;
+use App\Models\Comment;
+use App\Models\Tag;
+
+class Issue extends Model
+{
+    protected $fillable = [
+        'project_id',
+        'title',
+        'description',
+        'status',
+    ];
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+}
