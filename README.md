@@ -24,3 +24,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/altinaavdylii/issue-tracker-laravel.git
+<img width="1366" height="768" alt="Screenshot (235)" src="https://github.com/user-attachments/assets/b56630bc-b07f-4019-896b-ed1b3620b393" />
+
+
